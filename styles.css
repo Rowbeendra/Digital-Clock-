@@ -1,0 +1,46 @@
+/* styles.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #141e30, #243b55);
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.clock {
+  display: inline-block;
+  padding: 20px 40px;
+  background: #222;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5), 0 0 20px #00ff00;
+  border: 2px solid #00ff00;
+}
+
+.clock span {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+}
+
+.clock span.separator {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Optional: Add date display */
+.date {
+  font-size: 1.5rem;
+  color: #88ff88;
+  margin-top: 10px;
+}
